@@ -1,0 +1,140 @@
+
+body{
+    font-family: Georgia, serif;
+}
+
+header .header{
+    height: 400px;
+    margin: 0px;
+}
+
+.bg-color-1{
+    background-color: #007bff;
+}
+
+.font-color-white{
+    color:whitesmoke;
+}
+
+.font-color-blue{
+    color:#007bff;
+}        
+
+header .header-color{
+    background: lightblue;
+    
+}
+
+header .title{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;            
+}
+
+header .logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+header span{
+    font-size: 80px;
+    font-style: italic;
+}
+
+
+.height-350{
+    height: 350px;
+}
+
+.padding-top-100{
+    padding-top: 100px;
+}
+
+.padding-top-50{
+    padding-top: 50px;
+}
+
+.margin-top-100{
+    margin-top: 100px;
+}
+
+.subtitle{
+    color:#007bff;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+.card .weather {
+    width: 77%
+}
+
+@media(max-width:767px) {
+    .weather {
+        width: 100%
+    }
+}
+
+.card {
+    padding: 1rem;
+    /*margin: 1.5rem 4vw;*/
+    border-radius: 1rem;
+    background-color: rgba(238, 237, 237, 0.22);
+    border-color: rgba(238, 237, 237, 0.22);
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    text-align: center;
+    height: 100%;
+}
+
+@media(max-width:768px) {
+    .card {
+        margin: 1.5rem
+    }
+}
+
+.card .title {
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.card .title p {
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem
+}
+
+.card .temp {
+    font-size: 2.6rem;
+    margin-bottom: 1rem
+}
+
+.card .header {
+    color: #dddddd
+}
+
+.card .col-4 {
+    padding: 0 0.2rem
+}
+
+.card .icon {
+    align-self: flex-end;
+    margin-right: -2.5rem;
+    margin-top: -2rem;
+    z-index: 999
+}
+
+.card .icon img {
+    width: 5rem
+}
