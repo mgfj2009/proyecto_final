@@ -4,23 +4,15 @@ module.exports = {
   mode: "production",
   entry: "./src/index.js",
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "public"),
     filename: "bundle.js",
-  },
-  resolve: {
-    extensions: ['.js', '.jsx']
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-react']
-          }
-        }     
+        loader: "babel-loader",
       },
       {
         test: /\.css$/,
@@ -31,7 +23,7 @@ module.exports = {
         use: ["@svgr/webpack"],
       },
       {
-        test: /\.(gif|svg|ico|png|jep?g)$/i,
+        test: /\.(gif|png|jep?g)$/i,
         use: [
           "file-loader",
           {
@@ -48,7 +40,10 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
-  }
+  },
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
   performance: {
     hints: process.env.NODE_ENV === "production" ? "error" : false, 
     maxEntrypointSize: 580000,
