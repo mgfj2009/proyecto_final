@@ -1,4 +1,4 @@
-const base_url = 'http://api.weatherapi.com/v1/current.json?';
+const base_url = 'https://api.weatherapi.com/v1/current.json?';
 const api_key = '&key=bc3845958833402789102550212205';
 const query_city = '&q=';
 const query_lang = '&lang=';
