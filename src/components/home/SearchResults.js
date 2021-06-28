@@ -11,7 +11,7 @@ import i18n from "./i18n";
 const SearchResults = ({searchText, lang}) => {
 
     
-    const {data:headerCity,loading:loading, status:status} = useFetch(getUrl(encodeURI(searchText),lang));
+    const {data:headerCity,loading, status} = useFetch(getUrl(encodeURI(searchText),lang));
 
     return(
         <div className="row justify-content-center padding-top-50 height-350">
@@ -32,7 +32,7 @@ SearchResults.propTypes = {
 }
 
 SearchResults.defaultProps = {
-    searchText: 'Santiago'
+    searchText: 'Santiago, Chile'
   };
 
 

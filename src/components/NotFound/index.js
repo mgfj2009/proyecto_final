@@ -4,9 +4,12 @@ import LinkButton from '../common/LinkButton';
 
 const NotFound = () => (
 
+    <>
+    <br></br>
+    <br></br>
     <div className="row">
-        <div className="col-md-4"></div>
-        <div className="col-md-4 justify-content-center" style={{paddingTop :"200px"}} >
+        <div className="col-4"></div>
+        <div className="col-4 justify-content-center">
             <div className="row justify-content-center">
                 <Message text="404: URL Not Found" />
             </div>
@@ -14,8 +17,9 @@ const NotFound = () => (
                 <LinkButton type="danger" to="/" text="Back" />
             </div>
         </div>
-        <div className="col-md-4"></div>
+        <div className="col-4"></div>
     </div>
+    </>
 
 );
 

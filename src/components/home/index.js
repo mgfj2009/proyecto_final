@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import WeatherCardHeader from "./WeatherCardHeader";
 import SearchCity from "./SearchCity";
 

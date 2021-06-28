@@ -11,9 +11,9 @@ import NotFound from "./components/NotFound";
 
 
 import "./assets/css/styles.css";
-import MyConfigContextProvider, { MyConfigContext } from "./contexts/MainContext";
+import MyConfigContextProvider from "./contexts/MainContext";
 
-const About = lazy(() => import("./components/about"));
+const ConfigPage = lazy(() => import("./components/configPage"));
 
 
 const App = () =>{
@@ -24,13 +24,20 @@ const App = () =>{
         <MyConfigContextProvider>  
         <Header />
         <Switch>                 
+          
           <Route exact path="/" >
               <Home/>
           </Route>
-          <Suspense fallback={<div>Loading...</div>} >
-            <Route path="/about" component={About} />
-          </Suspense>
-          <Route component={NotFound} />
+
+          <Route exact path="/config" >
+            <Suspense fallback={<div>Loading...</div>} >
+              <ConfigPage />
+            </Suspense>
+          </Route>
+
+
+          <Route path="" component={NotFound} />
+          
         </Switch>
         <Footer />
         </MyConfigContextProvider>

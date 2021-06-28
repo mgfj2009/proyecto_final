@@ -18,7 +18,7 @@ const FormFields = () =>{
 
 return (
     <>
-        <form role="form">
+        <form>
         <h4>{i18n[lang].select_language}:</h4>
         <br/>                    
         <SelectInput handleChange={handleChange} options={options} lang={lang} />

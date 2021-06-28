@@ -17,7 +17,7 @@ const Header = () =>{
                              <Link to="/"><i className="fas fa-home font-color-white"></i></Link>
                         </li>
                         <li className="nav-item" style={{paddingLeft:"30px"}}>
-                        <Link to="/about"><i className="fas fa-cogs font-color-white"></i></Link>
+                        <Link to="/config"><i className="fas fa-cogs font-color-white"></i></Link>
                         </li>                
                     </ul>
                 </div>
@@ -32,7 +32,7 @@ const Header = () =>{
                 </div>
             </div>
             <div className="col-5 header-color logo">
-                <img src="weather_logo.png" className="" />
+                <img src="weather_logo.png" alt="My weather logo" />
             </div>
 
         </div>

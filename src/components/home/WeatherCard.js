@@ -5,7 +5,7 @@ const WeatherCard = ({weatherData, lang}) =>{
 
     return(
 
-    <div className="card"> <span className="icon"><img className="img-fluid" src={weatherData.icon} /></span>
+    <div className="card"> <span className="icon"><img className="img-fluid" alt="weather icon" src={weatherData.icon} /></span>
         <div className="title">
             <p className="font-color-blue">{weatherData.name}</p>
         </div>

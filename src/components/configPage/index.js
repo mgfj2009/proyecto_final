@@ -2,7 +2,7 @@ import React from "react";
 import FormFields from "./Formfields";
 import MyErrorBoundary from "../common/MyErrorBoundary";
 
-const About = () =>{
+const ConfigPage = () =>{
 
     return(
         <>
@@ -20,4 +20,4 @@ const About = () =>{
     )
 }
 
-export default About;
+export default ConfigPage;
